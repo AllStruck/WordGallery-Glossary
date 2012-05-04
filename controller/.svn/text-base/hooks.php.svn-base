@@ -1,0 +1,31 @@
+<?php
+	add_action( 'init', 'load_language');
+	
+	add_action( 'init', 'add_glossary_item_post_type');
+	add_action( 'init', 'add_glossary_term_custom_taxonomy');
+	
+	add_action( 'admin_head', 'modify_custom_post_type_icons');
+
+	$jQueryOptionEnabled = get_option("wgGlossary_use_jQuery");
+	if ($jQueryOptionEnabled) {
+		wp_enqueue_script('jquery');
+	}
+	add_filter('the_content', 'wgGlossary_display_page');
+
+	add_action('admin_menu', 'wg_glossary_menu');
+
+	// Add style as selected in options
+	wp_register_style( 'wgGlossaryStyle', WP_PLUGIN_URL . '/wordgallery-glossary/view/style/' . get_option("wgGlossary_display_style") );
+	wp_enqueue_style('wgGlossaryStyle');
+
+
+	// register WGGlossaryWidget widget
+	add_action('widgets_init', create_function('', 'return register_widget("WGGlossaryWidget");'));
+
+	// Alert Admin in case settings are not configured
+	add_action('admin_notices', 'admin_notices');
+
+	add_filter( 'plugin_action_links', 'wg_add_action_link', 10, 2 );
+	
+	register_activation_hook(__FILE__, 'plugin_activation');
+?>

@@ -1,0 +1,82 @@
+/* == Set everything to defaults == */
+#wgGlossaryItemList * { border:0px !important; text-decoration:none; padding:0 !important; margin:0 !important; }
+#wgGlossaryItemList blockquote { margin:2em !important; }
+#wgGlossaryItemList ul, #wgGlossaryItemList ol { margin-left:2em !important; }
+#wgGlossaryItemList del { text-decoration: line-through !important; }
+#wgGlossaryItemList ins { text-decoration: underline !important; color:#000 !important; background-color:#fff !important; }
+#wgGlossaryItemList code { 
+	display:block !important; border:3px !important; background-color:#000 !important; color:#00C700 !important; 
+	opacity:.7; -moz-opacity:.7; -moz-border-radius: .5em; border-radius: .5em;
+	margin: 2em 5em !important;
+	padding: 1em !important;
+}
+
+/* == Title Text Colors == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle {  }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle a {  }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle a:hover {  }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle a:active {  }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle a:visited {  }
+
+
+
+/* == Definition Text Colors == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition {  }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition strong {  }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a {  }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a:hover {  }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a:active {  }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a:visited {  }
+
+
+/* == Title Background Color == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle { 
+}
+
+/* == Definition Background Color == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition { 
+}
+
+
+/* == Title Borders and Corners == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle {
+}
+
+/* == Definition Borders and Corners == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition {
+}
+
+
+/* == Title Margins and Paddings == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle { 
+}
+
+/* == Definition Margins and Paddings == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition {
+}
+
+
+/* == Title Positioning == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle { z-index: 10 !important; position: relative; }
+
+/* == Definition Positioning == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition { z-index: 9 !important; position: relative; }
+
+/* == Read More Link == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a.wgGlossaryItemReadMoreLink {
+}
+
+/* == General == */
+#wgGlossaryItemList {}
+#wgGlossaryItemList .wgGlossaryItemWrapper {}
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle { clear:both; }
+
+
+
+/* + and - sign before title if jQuery is enabled */
+.wgGlossaryItemTitle:before { content : "(+) "; }
+.wgGlossaryItemTitle.active:before { content: "(—) "; }
+
+/* adds a colon to end of title when expanded using jQuery */
+.wgGlossaryItemTitle a:after { content:""; }
+.wgGlossaryItemTitle.active a:after { content:":"; }

@@ -1,0 +1,94 @@
+/* == Set everything to defaults == */
+#wgGlossaryItemList * { border:0px !important; text-decoration:none; padding:0 !important; margin:0 !important; }
+#wgGlossaryItemList blockquote { margin:2em !important; }
+#wgGlossaryItemList ul, #wgGlossaryItemList ol { margin-left:2em !important; }
+#wgGlossaryItemList del { text-decoration: line-through !important; }
+#wgGlossaryItemList ins { text-decoration: underline !important; color:#000 !important; background-color:#fff !important; }
+#wgGlossaryItemList code { 
+	display:block !important; border:3px !important; background-color:#000 !important; color:#00C700 !important; 
+	opacity:.7; -moz-opacity:.7; -moz-border-radius: 0em; border-radius: 0em;
+	margin: 2em 5em !important;
+	padding: 1em !important;
+}
+
+/* == Title Text Colors == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle { color: #DDDAE0 !important; }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle a { color: #DDDAE0 !important; }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle a:hover { color: #DDDAE0 !important; }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle a:active { color: #DDDAE0 !important; }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle a:visited { color: #DDDAE0 !important; }
+
+
+
+/* == Definition Text Colors == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition { color: #F7F7F7 !important; }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition strong { color:#DDDAE0 !important; }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a { color: #0C4AC0 !important; }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a:hover { color: #0C4AC0 !important; }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a:active { color: #0C4AC0 !important; }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a:visited { color: #0C4AC0 !important; }
+
+
+/* == Title Background Color == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle { 
+	background-color: #AD5138 !important;
+}
+
+/* == Definition Background Color == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition { 
+	background-color: #8594AE !important;
+}
+
+
+/* == Title Borders and Corners == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle {
+	border:1.5px solid black !important;
+}
+
+/* == Definition Borders and Corners == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition {
+}
+
+
+/* == Title Margins and Paddings == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle { 
+	padding:10px !important;
+}
+
+/* == Definition Margins and Paddings == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition {
+	padding:7px !important;
+	padding-bottom:16px !important;
+}
+
+
+/* == Title Positioning == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle { z-index: 10 !important; position: relative; }
+
+/* == Definition Positioning == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition { z-index: 9 !important; position: relative; }
+
+/* == Read More Link == */
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a.wgGlossaryItemReadMoreLink {
+	background-color: #8594AE !important;
+	margin-bottom:10px !important;
+	margin-right:4em !important;
+	color:#AD5138 !important;
+	padding:1em !important;
+}
+
+/* == General == */
+#wgGlossaryItemList {}
+#wgGlossaryItemList .wgGlossaryItemWrapper {}
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle { clear:both; }
+#wgGlossaryItemList .wgGlossaryItemTitle { font-family: "Courier"; }
+
+
+
+/* + and - sign before title if jQuery is enabled */
+.wgGlossaryItemTitle:before { content : "[+] "; }
+.wgGlossaryItemTitle.active:before { content: "[-] "; }
+
+/* adds a colon to end of title when expanded using jQuery */
+.wgGlossaryItemTitle a:after { content:""; }
+.wgGlossaryItemTitle.active a:after { content:""; }
