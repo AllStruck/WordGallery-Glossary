@@ -3,7 +3,7 @@ Contributors: AllStruck
 Donate link: http://wordgallery-glossary.allstruck.net/donate
 Tags: glossary, terms, words, gallery, definitions, plugin, widget, page, comments
 Requires at least: 3.0
-Tested up to: 3.2.1
+Tested up to: 3.4.1
 Stable tag: 1.0.6
 
 Easily add a simple glossary of terms to your site. A widget is also included to display a few random terms with a link to the full glossary.
@@ -19,10 +19,10 @@ Additional features and functionality will be added with future versions and any
 There are three methods that can be used to install WordPress plugins, WordGallery Glossary can be installed in any of these three ways:
 
 1. Install from WordPress Plugins Directory by clicking "Install" button.
-1. Download 'wordglossary-gallery.zip' and upload the file directly in the 'Plugins' menu.
-1. Download 'wordglossary-gallery.zip', extract the files, and upload the directory `wordglossary-gallery` to the `/wp-content/plugins/` directory.
+1. Download 'wordgallery-glossary.zip' and upload the file directly in the 'Plugins' menu.
+1. Download 'wordgallery-glossary.zip', extract the files, and upload the directory `wordgallery-glossary` to the `/wp-content/plugins/` directory.
 
-Once the plugin has been installed, it must also be activated before it can be configured and used.
+Once the plugin has been installed, it must also be activated and configured before it can be used.
 
 == Configuration ==
 
@@ -52,9 +52,9 @@ NOTE: Glossary terms on the full listing page will link to the individual term p
 
 WordGallery Glossary adds a new type of post/page to your WordPress site. After activating the plugin you'll see "Glossary Terms" as a new menu under pages in your administrative interface. Add terms like you would any page, these terms will each have their own page at your-site.com/glossary-term/glossary-term-slug, and when you create a blank page and configure the plugin to use it to display terms on all of the terms and their definitions (the page content) will appear with the style selected in the settings panel.
 
-= Is this plugin WPMU or network activated friendly?  =
+= Is this plugin WPMU or network activated friendly? =
 
-WordGallery Glossary can be used with network activated WordPress installations and will keep glossaries of each blog separate. Since the plugin is developed for WordPress 3.0 and above there is not any support or testing for WPMU or WordPress prior to 3.0, you may try this at your own risk and we may or may not add support for earlier versions... in the future...
+WordGallery Glossary can be used with network activated WordPress installations and will keep glossaries of each blog separate. Since the plugin is developed for WordPress 3.0 and above there is not any support or testing for WPMU or WordPress prior to 3.0.
 
 = Can I create more than one Glossary of Terms? =
 
@@ -66,7 +66,7 @@ Since version 1.0.4 you can modify the appearance of the glossary page more usin
 
 = Can this plugin be used for other uses other than a Glossary of Terms? =
 
-This plugin may be used to display any type of information that you want to have collected in a definition list style (terms and definitions), this plugin is great for displaying a list of frequently asked questions (FAQ) and more. As of version 1.0.7 you can rename the custom post type created, along with the URL slug associated with them.
+This plugin may be used to display any type of information that you want to have collected in a definition list style (terms and definitions), this plugin is great for displaying a list of frequently asked questions (FAQ) and more. As of version 1.0.7 you can rename the URL slug associated with them. To avoid loss of glossary term posts the custom post type remains under the name 'Glossary Terms'.
 
 == Screenshots ==
 
@@ -76,20 +76,11 @@ This plugin may be used to display any type of information that you want to have
 == Changelog ==
 
 = 1.0.7 =
-* BUGFIX: Removed copy of jQuery added by this plugin, now using jQuery included with WP.
+* BUGFIX: Fixed jQuery inclusion, now only includes jQuery on the Glossary listing page, and uses deqeue and enqueue to add Google's hosted library. This should solve any issues related to jQuery not working for some installations.
 * BUGFIX: Added glossary of terms naming to edit page and menu(s).
-* Complete code cleanup/overhaul, code is now MVC and OO.*
+* Complete code cleanup/overhaul, code is now on the way to being MVC and OO.*
 * Added custom icon for edit page and menu(s).
 * Moved Glossary Terms menu; is now below comments and just a few ticks above second divider (55).
-* Widgetized options page.
-* Added Colors section to settings page.
-* Added options in Colors section of settings page for many various elements of user interface.
-* Removed all colors from styles (CSS).
-* Added automatic linking functionality for glossary terms (not enabled by default.)
-* Added 'Automatic Linking' section to settings page.
-* Added option in 'Automatic Linking' section of settings page to enable automatic linking using glossary term titles.
-* Added new field on Edit Glossary Term page for creating auto-link terms for glossary terms.
-* Added option to ignore automatic linking search terms.
 
 = 1.0.6 =
 * BUGFIX: Added clear-fix to titles on each style to fix hidden show-more link.

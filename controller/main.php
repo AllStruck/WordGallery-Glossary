@@ -5,8 +5,10 @@
 */
 
 	require_once(WP_PLUGIN_DIR . '/wordgallery-glossary/model/setup.php');
-	require_once(WP_PLUGIN_DIR . '/wordgallery-glossary/controller/options.php');
+	require_once(WP_PLUGIN_DIR . '/wordgallery-glossary/model/options.php');
 	
+	require_once(WP_PLUGIN_DIR . '/wordgallery-glossary/model/custom-post-type/custom-post-type.php');
+
 	require_once(WP_PLUGIN_DIR . '/wordgallery-glossary/model/functions.php');
 	require_once(WP_PLUGIN_DIR . '/wordgallery-glossary/controller/hooks.php');
 

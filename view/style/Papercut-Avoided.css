@@ -102,3 +102,14 @@
 /* adds a colon to end of title when expanded using jQuery */
 .wgGlossaryItemTitle a:after { content:""; }
 .wgGlossaryItemTitle.active a:after { content:":"; }
+
+/* == Groups == */
+#wgGlossaryItemList .wgGlossaryItemGroup { 
+	margin: 30px 0 !important;
+}
+#wgGlossaryItemList .wgGlossaryItemGroup .wgGlossaryGroupName { 
+	margin: 10px 0;
+	font-size: 120%;
+	line-height: 150%;
+}
+#wgGlossaryItemList .wgGlossaryItemGroupTarget {}
