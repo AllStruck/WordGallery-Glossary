@@ -2,7 +2,7 @@
 /*
 Plugin Name: WordGallery Glossary
 Plugin URI: http://wordgallery-glossary.allstruck.com
-Description: A simple glossary plugin for showing terms and definitions on one page with optional jQuery animation. Comes with a widget to display some random terms.
+Description: A simple glossary plugin for showing terms and definitions on one page with optional jQuery animation. Comes with a widget to display some random terms. Terms are added in a custom post type, so every term has a single page as well.
 Version: 1.0.7
 Author: AllStruck
 Author URI: http://www.allstruck.com/
@@ -37,6 +37,8 @@ License: GPL2
 	    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 	
 	*/
+	
+	define('wgGlossaryMainFile', __FILE__);
 	
 	include('controller/main.php');
 	

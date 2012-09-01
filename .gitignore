@@ -2,3 +2,7 @@
 wordgallery-glossary.sublime-project
 
 wordgallery-glossary.sublime-workspace
+
+.DS_Store
+
+view/.DS_Store

@@ -1,11 +1,11 @@
-/* == Set everything to defaults == */
+/* == Set up the basics == */
 #wgGlossaryItemList * { border:0px !important; text-decoration:none; padding:0 !important; margin:0 !important; }
 #wgGlossaryItemList blockquote { margin:2em !important; }
 #wgGlossaryItemList ul, #wgGlossaryItemList ol { margin-left:2em !important; }
 #wgGlossaryItemList del { text-decoration: line-through !important; }
 #wgGlossaryItemList ins { text-decoration: underline !important; color:#000 !important; background-color:#fff !important; }
 #wgGlossaryItemList code { 
-	display:block !important; border:3px !important; background-color:#101213 !important; color:#00C700 !important; 
+	display:block !important; border:3px !important; background-color:#000 !important; color:#00C700 !important; 
 	opacity:.7; -moz-opacity:.7; -moz-border-radius: .5em; border-radius: .5em;
 	margin: 2em 5em !important;
 	padding: 1em !important;
@@ -21,9 +21,8 @@
 
 
 /* == Definition Text Colors == */
-#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition { color: black !important; }
-#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition strong { color:gray !important; }
-#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition (h1|h2) { color:gray !important; }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition { color: white !important; }
+#wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition strong { color:black !important; }
 #wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a { color: blue !important; }
 #wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a:hover { color: blue !important; }
 #wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a:active { color: blue !important; }
@@ -37,7 +36,7 @@
 
 /* == Definition Background Color == */
 #wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition { 
-	background-color: white !important;
+	background-color: gray !important;
 }
 
 
@@ -45,17 +44,13 @@
 #wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemTitle {
 	-moz-border-radius: 3em 3em 3em 3em !important;
 	border-radius: 3em 3em 3em 3em !important;
-	-webkit-box-shadow: 1em 0 1em rgba(0,0,0,.5);
-	-moz-box-shadow: 1em 0 1em rgba(0,0,0,.5);
-	border:0px solid black !important;
+	border:3.5px solid red !important;
 }
 
 /* == Definition Borders and Corners == */
 #wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition {
-	-moz-border-radius: 1em 1em 5em 1em !important;
-	border-radius: 1em 1em 5em 1em !important;
-	-webkit-box-shadow: 1em 1em 1em rgba(0,0,0,.5);
-	-moz-box-shadow: 1em 1em 1em rgba(0,0,0,.5);
+	-moz-border-radius: 1em 1em 7em 1em !important;
+	border-radius: 1em 1em 7em 1em !important;
 }
 
 
@@ -70,7 +65,7 @@
 	margin-bottom:7px !important;
 	margin-left:17px !important;
 	margin-top:-7px !important;
-	margin-right:17px !important;
+	margin-right:3px !important;
 	padding:7px !important;
 	padding-bottom:16px !important;
 }
@@ -86,13 +81,11 @@
 #wgGlossaryItemList .wgGlossaryItemWrapper .wgGlossaryItemDefinition a.wgGlossaryItemReadMoreLink {
 	-moz-border-radius: 3em 3em 3em 3em !important;
 	border-radius: 3em 3em 3em 3em !important;
-	background-color: white !important;
+	background-color: gray !important;
 	margin-bottom:10px !important;
 	margin-right:4em !important;
-	color:blue !important;
+	color:pink !important;
 	padding:1em !important;
-	-webkit-box-shadow: 1em 1em 1em rgba(0,0,0,.5);
-	-moz-box-shadow: 1em 1em 1em rgba(0,0,0,.5);
 }
 
 /* == General == */
@@ -104,7 +97,7 @@
 
 /* + and - sign before title if jQuery is enabled */
 .wgGlossaryItemTitle:before { content : "(+) "; }
-.wgGlossaryItemTitle.active:before { content: "(—) "; }
+.wgGlossaryItemTitle.active:before { content: "(ó) "; }
 
 /* adds a colon to end of title when expanded using jQuery */
 .wgGlossaryItemTitle a:after { content:""; }

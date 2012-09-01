@@ -50,9 +50,9 @@ NOTE: Glossary terms on the full listing page will link to the individual term p
 
 = How do I add glossary terms? =
 
-WordGallery Glossary adds a new type of post/page to your WordPress site. After activating the plugin you'll see "Glossary Terms" as a new menu under pages in your administrative interface. Add terms like you would any page, these terms will each have their own page at your-site.com/glossary-term/glossary-term-slug, and when you create a blank page and configure the plugin to use it to display terms on all of the terms and their definitions (the page content) will appear with the style selected in the settings panel.
+WordGallery Glossary adds a custom post type to your WordPress site. After activating the plugin you'll see "Glossary Terms" as a new menu under pages in your administrative interface. Add terms like you would any page, these terms will each have their own page at your-site.com/glossary-term/glossary-term-slug, and when you create a blank page and configure the plugin to use it to display terms on all of the terms and their definitions (the page content) will appear with the style selected in the settings panel.
 
-= Is this plugin WPMU or network activated friendly? =
+= Is this plugin WPMU / "network activated" friendly? =
 
 WordGallery Glossary can be used with network activated WordPress installations and will keep glossaries of each blog separate. Since the plugin is developed for WordPress 3.0 and above there is not any support or testing for WPMU or WordPress prior to 3.0.
 
@@ -62,7 +62,7 @@ Currently only one glossary page is supported with WordGallery Glossary.
 
 = Can the display style of the items on the full glossary page be changed? =
 
-Since version 1.0.4 you can modify the appearance of the glossary page more using custom CSS, by default the custom CSS field contains a sample style that makes it fairly easy to modify. You may also choose from one of the 6 pre-loaded CSS styles, or add your own CSS file(s) to the plugin's style folder.
+Since version 1.0.4 you can modify the appearance of the glossary page more using custom CSS, by default the custom CSS field contains a sample style that makes it fairly easy to modify. You may also choose from one of the 6 pre-loaded CSS styles or add your own CSS file(s) to the plugin's style folder.
 
 = Can this plugin be used for other uses other than a Glossary of Terms? =
 

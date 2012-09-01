@@ -1,14 +1,14 @@
 10
 
 dir
-455965
-http://svn.wp-plugins.org/wordgallery-glossary/trunk/view
-http://svn.wp-plugins.org
+593219
+http://plugins.svn.wordpress.org/wordgallery-glossary/trunk/view
+http://plugins.svn.wordpress.org
 
 
 
-2011-08-24T20:11:06.283760Z
-428322
+2012-09-01T01:49:06.981070Z
+593219
 AllStruck
 
 
@@ -32,10 +32,30 @@ dir
 image
 dir
 
-randomTermWidget
+random-terms-widget
 dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://plugins.svn.wordpress.org/wordgallery-glossary/trunk/view/randomTermWidget
+592194
 
-menu-page
+settings-page
 dir
 
 
@@ -55,6 +75,6 @@ dir
 
 
 
-http://svn.wp-plugins.org/wordgallery-glossary/trunk/model/menu-page
-455965
+http://plugins.svn.wordpress.org/wordgallery-glossary/trunk/view/menu-page
+592194
 

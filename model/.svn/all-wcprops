@@ -1,17 +1,17 @@
 K 25
 svn:wc:ra_dav:version-url
 V 49
-/!svn/ver/428322/wordgallery-glossary/trunk/model
+/!svn/ver/593217/wordgallery-glossary/trunk/model
 END
-setup.php
+default-options.php
 K 25
 svn:wc:ra_dav:version-url
-V 59
-/!svn/ver/428322/wordgallery-glossary/trunk/model/setup.php
+V 69
+/!svn/ver/593214/wordgallery-glossary/trunk/model/default-options.php
 END
 functions.php
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/!svn/ver/484905/wordgallery-glossary/trunk/model/functions.php
+/!svn/ver/593217/wordgallery-glossary/trunk/model/functions.php
 END
