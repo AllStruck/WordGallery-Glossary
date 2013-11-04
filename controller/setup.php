@@ -111,8 +111,8 @@ define('DEFAULT_CSS_STYLE_FILE_LOCATION', WP_PLUGIN_DIR . '/wordgallery-glossary
 define('wgGlossaryCustomPostTypeName', 'Glossary Term');
 define('wgGlossaryCustomPostTypeNamePlural', 'Glossary Terms');
 define('wgGlossaryCustomPostTypeSlug', wgGlossaryShortPrefix.'glossary_term');
-define('wgGlossaryCustomTaxonomyName', 'Group');
-define('wgGlossaryCustomTaxonomyNamePlural', 'Groups');
+define('wgGlossaryCustomTaxonomyName', 'Glossary Group');
+define('wgGlossaryCustomTaxonomyNamePlural', 'Glossary Groups');
 define('wgGlossaryCustomTaxonomySlug', wgGlossarySlugPrefix.'group');
 define('wgGlossaryCustomPostTypeRewriteSlug', get_option(wgGlossarySettingThirteenSlug));
 

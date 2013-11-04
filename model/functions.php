@@ -52,13 +52,13 @@ function wgGlossary_display_glossary(
 	
 	if (($overridePageVersion === FALSE) || ($overridePageVersion && is_numeric(wgGlossaryPageToOverride) && is_page(wgGlossaryPageToOverride))){
 		if ($useGroupsOrganization) { // Use the custom taxonomy Group to organize our glossary terms:
-			$taxonomy = 'glossary-term-group';
-			$groups = get_terms($taxonomy); 
+			$groups = get_terms(wgGlossaryCustomTaxonomySlug); 
 			if ( !empty($groups) ) {
 				if ($showGroupNameIndex) {
 					$content .= '<div id="groupNameIndex">';
 					foreach ($groups as $key=>$group) {
-						$content .= '<a href="#'.$group->name.'">'.$group->name.'</a>';
+						$groupname = $group->name;
+						$content .= '<a href="#'. $groupname .'">'. $groupname .'</a>';
 						$content .= ($key == count($groups) - 1) ? "" : " | ";
 					}
 					$content .= '</div>';
@@ -72,12 +72,12 @@ function wgGlossary_display_glossary(
 					  	$content .= '<div class="wgGlossaryGroupName">' . $group->name . '</div>';
 				  	}
 						$glossary_item_index = get_posts(array(
-															'post_type'		=> 'glossary-term',
+															'post_type'		=> wgGlossaryCustomPostTypeSlug,
 															'post_status'	=> 'publish',
 															'orderby'		=> 'title',
 															'order'			=> $glossaryDisplayOrder,
 															'post_parent'	=> null,
-															$taxonomy => $group->name,
+															'taxonomy'		=> wgGlossaryCustomTaxonomySlug,
 															));
 						if ($glossary_item_index){
 							$excerptIgnore = get_option('wgGlossary_ignore_excerpt');
@@ -152,7 +152,7 @@ function load_language() {
 
 function admin_notices() {
 	// Alert if display style is not set
-	if (!ereg('.css$', get_option("wgGlossary_display_style")) && !ereg('.php$', get_option("wgGlossary_display_style"))) {
+	if (!preg_match('/.css$/', get_option("wgGlossary_display_style")) && !preg_match('/.php$/', get_option("wgGlossary_display_style"))) {
 		echo '<div class="error"><p><strong>';
 			_e('The WordGallery Glossary plugin is active but you need to select a style on the ');
 		echo '<a href="'. admin_url() . 'options-general.php?page=' . wgGlossarySettingsPageSlug . '">';

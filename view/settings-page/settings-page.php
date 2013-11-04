@@ -129,7 +129,7 @@ function wgGlossary_display_style_input() {
   $styleFiles = array();
 			if ($handle = opendir(WP_PLUGIN_DIR . '/wordgallery-glossary/view/style')) {
 			    while (false !== ($file = readdir($handle))) {
-					if (ereg('.css$', $file)) {
+					if (preg_match('/.css$/', $file)) {
 				        array_push($styleFiles, $file);
 					}
 			    }
